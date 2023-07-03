@@ -1,0 +1,129 @@
+.background {
+	position: relative;
+	background: rgb(199, 255, 223);
+	background: linear-gradient(0deg, rgba(199, 255, 223, 1) 28%, rgba(73, 115, 237, 1) 100%);
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.Cloud1 {
+	position: absolute;
+	left: 1143.66px;	
+	top: 25px;
+	width: 348.16px;
+}
+
+.Cloud2 {
+	position: absolute;
+	left: 70px;
+	top: 34px;
+	width: 761.25px;
+}
+
+.Cloud3 {
+	position: absolute;
+	left: 90px;
+	top: 349px;
+	width: 1036.22px;
+}
+
+.Mounte3 {
+	position: absolute;
+	left: -41px;
+	bottom: 127px;
+	width: 1440px;
+}
+
+.land {
+	position: absolute;
+	left: -68px;
+	bottom: -10px;
+	width: 1612.44px;
+}
+
+.Sun {
+	position: absolute;
+	left: 948px;
+	top: 90px;
+	width: 277.50px;
+}
+
+.RightFrontRock {
+	position: absolute;
+	left: 800px;
+	top: 568px;
+	width: 738.06px;
+}
+
+.LeftBigRockBackGrass {
+	position: absolute;
+	left: 394px;
+	top: 575px;
+	height: 133.16px;
+	width: 153.84px;
+	overflow: hidden;
+}
+
+.LeftSmallRock {
+	position: absolute;
+	left: 476px;
+	top: 415px;
+	width: 327.31px;
+}
+
+.RightRockCenterCactus {
+	position: absolute;
+	left: 1134px;
+	top: 580px;
+	width: 94.59px;
+}
+
+.LeftRockFront {
+	position: absolute;
+	left: 0px;
+	top: 658px;
+	width: 1268.69px;
+}
+
+.RightBackGrass {
+	position: absolute;
+	left: 1148px;
+	top: 462px;
+	width: 217.34px;
+}
+
+.RightBigCactus {
+	position: absolute;
+	left: 1269px;
+	top: 126px;
+	width: 159.03px;
+}
+
+.RightCactus {
+	position: absolute;
+	left: 1063px;
+	top: 362px;
+	width: 113.06px;
+}
+
+.LeftBigRock {
+	position: absolute;
+	left: 25px;
+	top: 141px;
+	width: 514.66px;
+}
+
+.LeftSmallRockGrass {
+	position: absolute;
+	left: 664px;
+	top: 536px;
+	width: 140.56px;
+}
+
+.RightRockCornerCactus {
+	position: absolute;
+	left: 1353px;
+	top: 479px;
+	width: 129.41px;
+}
