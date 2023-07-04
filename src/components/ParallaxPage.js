@@ -1,0 +1,52 @@
+import React from 'react'
+import './ParallaxCSS.css'
+import Cloud1 from './elements/Cloud1'
+import Cloud2 from './elements/Cloud2'
+import Cloud3 from './elements/Cloud3'
+import SvgMounte3 from './elements/Mounte3';
+import Land from './elements/Land';
+import Sun from './elements/Sun';
+import RightCactus from './elements/RightCactus'
+import LeftRockFront from "./elements/LeftRockFront";
+import LeftBigRockBackGrass from "./elements/LeftBigRockBackGrass";
+import LeftSmallRockGrass from "./elements/LeftSmallRockGrass";
+import RightBackGrass from "./elements/RightBackGrass";
+import RightBigCactus from "./elements/RightBigCactus";
+import RightFrontRock from "./elements/RightFrontRock";
+import RightRockCenterCactus from "./elements/RightRockCenterCactus";
+import RightRockCornerCactus from "./elements/RightRockCornerCactus";
+
+import LeftBigRock from "./elements/LeftBigRock";
+import LeftSmallRock from "./elements/LeftSmallRock";
+
+
+const ParallaxPage = () => {
+    return (
+        <>
+            <slide>
+                <div className="background">
+                    <Cloud1 />
+                    <Cloud2 />
+                    <Cloud3 />
+                    <SvgMounte3 />
+                    <Land />
+                    <Sun />
+                    <RightCactus />
+                    <RightBigCactus />
+                    <RightBackGrass />
+                    <RightFrontRock />
+                    <RightRockCornerCactus />
+                    <RightRockCenterCactus />
+                    <LeftRockFront />
+                    <LeftSmallRockGrass />
+                    <LeftSmallRock/>
+                    <LeftBigRockBackGrass/>
+                    <LeftBigRock />
+
+                </div>
+            </slide>
+        </>
+    )
+}
+
+export default ParallaxPage
