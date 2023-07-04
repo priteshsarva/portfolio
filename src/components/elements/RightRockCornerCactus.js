@@ -2,7 +2,7 @@ import React from 'react'
 
 const RightRockCornerCactus = (props) => {
   return (
-    <div className='RightRockCornerCactus'>
+    <div className='parallax RightRockCornerCactus'>
       <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"

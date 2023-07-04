@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sun = (props) => {
   return (
-    <div className='Sun'>
+    <div className='parallax Sun'>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 185 185.71"

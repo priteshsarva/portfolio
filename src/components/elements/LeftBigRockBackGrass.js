@@ -2,7 +2,7 @@ import React from 'react'
 
 const LeftBigRockBackGrass = (props) => {
   return (
-    <div className='LeftBigRockBackGrass'>
+    <div className='parallax LeftBigRockBackGrass'>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"

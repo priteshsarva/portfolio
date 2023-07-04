@@ -2,7 +2,7 @@ import React from 'react'
 
 const RightBackGrass = (props) => {
   return (
-    <div className='RightBackGrass'> <svg
+    <div className='parallax RightBackGrass'> <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 144.9 104.64"

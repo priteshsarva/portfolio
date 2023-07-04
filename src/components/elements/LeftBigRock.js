@@ -2,7 +2,7 @@ import React from 'react'
 
 const LeftBigRock = (props) => {
   return (
-    <div className='LeftBigRock'>
+    <div className='parallax LeftBigRock'>
        <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 344 381"
