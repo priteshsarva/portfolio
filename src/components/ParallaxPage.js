@@ -21,9 +21,29 @@ import LeftSmallRock from "./elements/LeftSmallRock";
 
 
 const ParallaxPage = () => {
+
+    window.addEventListener("load", (e) => {
+        console.log(e);
+        let parallax_el = document.querySelectorAll(".parallax")
+        console.log(parallax_el);
+        let clientY = 0, clientX = 0
+        window.addEventListener("mousemove", (e) => {
+            clientY = e.clientY - window.innerHeight / 2
+            clientX = e.clientX - window.innerWidth / 2
+             console.log(clientX,clientY);
+            parallax_el.forEach((el) => {
+                el.style.transform = `translateX(-50% + ${clientX}px) translateY(-50% + ${clientY}px)`
+                // console.log(`translateX(-50% + ${clientX}px) translateY(-50% + ${clientY}px)`);
+            })
+        })
+
+    })
+
+
+
     return (
         <>
-            <slide>
+            <div>
                 <div className="background">
                     <Cloud1 />
                     <Cloud2 />
@@ -39,12 +59,12 @@ const ParallaxPage = () => {
                     <RightRockCenterCactus />
                     <LeftRockFront />
                     <LeftSmallRockGrass />
-                    <LeftSmallRock/>
-                    <LeftBigRockBackGrass/>
+                    <LeftSmallRock />
+                    <LeftBigRockBackGrass />
                     <LeftBigRock />
 
                 </div>
-            </slide>
+            </div>
         </>
     )
 }
