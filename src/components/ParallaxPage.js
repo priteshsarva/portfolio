@@ -32,7 +32,7 @@ const ParallaxPage = () => {
 
         tl.fromTo(parallax_el[0],
             { scale: 250, zIndex: 99 },
-            { duration: 3, scale: 1, zIndex: 0, ease: Power4.easeOut , delay: 1 })
+            { duration: 3, scale: 1, zIndex: 0, ease: Power4.easeOut, delay: 1 })
             .fromTo(parallax_el[1],
                 { scale: 100, opacity: 0, x: 50000 },
                 { duration: 2, opacity: 1, x: 0, scale: 1, ease: Power4.easeOut }, "1.5")
@@ -83,17 +83,27 @@ const ParallaxPage = () => {
                 { duration: 2, opacity: 1, y: 0, scale: 1, ease: Power4.easeOut }, "1.7")
 
 
+        // console.log(window.nigator.userAgent);
+        window.addEventListener('deviceorientation', (e) => {
+            if (tl.isActive()) {
+                return
+            }
+            console.log(e);
+            clientY = Math.round(e.gamma)
+            clientX = Math.round(e.beta)
+            parallax_el.forEach((el) => {
+                el.style.transform = `translateX(calc(-${clientX}%)) translateY(calc(-${clientY}%))`
+            })
+        })
         window.addEventListener("mousemove", (e) => {
             if (tl.isActive()) {
                 return
             }
+            console.log(e);
+
             clientY = e.clientY - window.innerHeight / 2
             clientX = e.clientX - window.innerWidth / 2
             parallax_el.forEach((el) => {
-
-
-                el.style.transform = `translateX(calc(-50% + ${clientX * el.dataset.distance / 2}px)) translateY(calc(-50% + ${clientY * el.dataset.distance / 2}px))`
-
                 el.style.transform = `translateX(calc(-50% + ${clientX * el.dataset.distance / 2}px)) translateY(calc(-50% + ${clientY * el.dataset.distance / 2}px))`
             })
         })
