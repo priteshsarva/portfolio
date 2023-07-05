@@ -2,12 +2,12 @@ import React from 'react'
 
 const Land = (props) => {
     return (
-        <div className="parallax land">
+        <div className="parallax land"  {...props}>
 
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1134.57 155.93"
-                {...props}
+               
             >
                 <g
                     data-name="Layer 2"

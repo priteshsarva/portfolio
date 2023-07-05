@@ -2,12 +2,11 @@ import React from 'react'
 
 const RightFrontRock = (props) => {
   return (
-    <div className='parallax RightFrontRock'><svg
+    <div className='parallax RightFrontRock'      {...props}   ><svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 492.04 129.52"
-    
-      {...props}
+
     >
       <defs>
         <linearGradient

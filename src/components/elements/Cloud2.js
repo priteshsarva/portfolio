@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Cloud2 = () => {
+const Cloud2 = (props) => {
     const [cls1, setCls1] = useState({
         fill: '#c6d1fd',
     })
@@ -12,7 +12,7 @@ const Cloud2 = () => {
     })
 
     return (
-        <div className='parallax Cloud2'>
+        <div className='parallax Cloud2' {...props}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 507.51 165.7">
                 <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Cloud2">
                     <path className="cls-1"  style={cls1}d="M507.51,165.7c-13.69-3.55-33.08-6.42-56.3-8.72-128.36-12.7-371.81-8.4-415.95-7.49l-7,.15s-34-36.68-27.46-68c3-14,14.24-26.87,40.5-34.94,85.84-26.14,140.4,67.76,140.4,67.76C179.37,75.35,229,93.42,229,93.42,203.78,33.86,222.26,4,249.52,1.06,387.19-13.66,409.36,129.31,410.3,136.31c0,.18,0,.27,0,.27,57.94-16.49,82.79,5.45,92.15,19.32A40.74,40.74,0,0,1,507.51,165.7Z" />

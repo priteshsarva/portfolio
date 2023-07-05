@@ -8,6 +8,7 @@
 }
 
 .parallax {
+	/* cursor: none; */
 	transform: translateX(-50%) translateY(-50%);
 }
 

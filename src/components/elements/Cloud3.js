@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Cloud3 = () => {
+const Cloud3 = (props) => {
     const [cls1, setCls1] = useState({
         isolation: 'isolate',
     })
@@ -10,7 +10,7 @@ const Cloud3 = () => {
     })
 
     return (
-        <div className='parallax Cloud3'>
+        <div className='parallax Cloud3' {...props}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690.81 202.13">
                 {/* <defs><style>.cls-1{isolation:isolate;}.cls-2{fill:#e8e8fe;mix-blend-mode:soft-light;}</style></defs> */}
                 <g className="cls-1"  style={cls1}><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Cloud3">

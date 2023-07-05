@@ -2,11 +2,10 @@ import React from 'react'
 
 const Mounte3 = (props) => {
     return (
-        <div className="parallax Mounte3">
+        <div className="parallax Mounte3"   {...props}>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1085.14 195.44"
-                {...props}
             >
                 <defs>
                     <style>

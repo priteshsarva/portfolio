@@ -2,13 +2,12 @@ import React from 'react'
 
 const RightCactus = (props) => {
   return (
-    <div className='parallax RightCactus'>
+    <div className='parallax RightCactus'       {...props}    >
       <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 75.37 163.89"
     
-    {...props}
   >
     <defs>
       <linearGradient

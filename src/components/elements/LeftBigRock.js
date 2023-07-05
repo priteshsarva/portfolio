@@ -2,11 +2,11 @@ import React from 'react'
 
 const LeftBigRock = (props) => {
   return (
-    <div className='parallax LeftBigRock'>
+    <div className='parallax LeftBigRock'     {...props}
+    >
        <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 344 381"
-    {...props}
   >
     <defs>
       <linearGradient
