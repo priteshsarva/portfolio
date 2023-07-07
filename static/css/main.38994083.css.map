@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.38994083.css","mappings":"AAAA,4BAKI,QAAS,CACT,SACJ","sources":["index.css"],"sourcesContent":["*,\r\n*::after,\r\n*::before,\r\nhtml,\r\n.body {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n"],"names":[],"sourceRoot":""}
