@@ -1,0 +1,64 @@
+.intro {
+    height: 100vh;
+    /* background-color: green; */
+
+    margin-left: 5.271vw;
+    margin-right: 5.271vw;
+    position: relative;
+}
+
+.title h1 {
+    mix-blend-mode: soft-light;
+    color: white;
+    /* font-size: 12vw; */
+    font-size: clamp(80px,12vw, 240px);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 9.5vw;
+    position: relative;
+}
+
+.title {
+    padding-top: 21.1vh;
+}
+
+
+.designation {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.designation h1 {
+    mix-blend-mode: soft-light;
+    color: white;
+    font-size: 4vw;
+}
+
+@media only screen and (max-width: 576px) {
+    .title h1 {
+        mix-blend-mode: soft-light;
+        color: white;
+        font-size: 17vw;
+        line-height: 14vw;
+        text-align: center;
+    }
+    .designation h1 {
+        mix-blend-mode: soft-light;
+        color: white;
+        font-size: 10vw;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width : 576px) {}
+
+@media only screen and (min-width : 768px) {}
+
+@media only screen and (min-width : 992px) {} 
+
+@media only screen and (min-width : 1200px) {}
+
+@media only screen and (min-width : 1400px) {}

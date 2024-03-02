@@ -1,0 +1,41 @@
+.site-card {
+    width: clamp(271px, 33vw, 800px);
+    /* width: 33vw; */
+    /* min-width: 271px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-card img {
+    width: inherit;
+    transition: all 0.3s ease-in-out;
+    mix-blend-mode: soft-light;
+}
+
+.site-card h2 {
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+    /* background-color: red; */
+}
+
+.site-card:hover img {
+    filter: blur(2px);
+    -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1));
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1));
+    opacity: .5;
+    mix-blend-mode: normal;
+}
+
+.site-card:hover h2 {
+    opacity: 1;
+}
+
+
+/* .site-card img:hover~.site-card {
+    mix-blend-mode: normal;
+} */
