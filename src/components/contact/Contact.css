@@ -1,0 +1,20 @@
+.lamp{
+    position: relative;
+    height: 100vh;
+}
+.lamp img{
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -70%) scale(1.5);
+    height: 100%;
+}
+.lamp :nth-child(1){
+    mix-blend-mode: screen;
+}
+.lamp :nth-child(2){
+    mix-blend-mode: screen;
+}
+.lamp :nth-child(3){
+    mix-blend-mode: multiply;
+}

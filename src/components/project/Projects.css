@@ -3,6 +3,7 @@
     margin-right: 5.271vw;
     position: relative;
     color: white;
+    margin-bottom: 5.271vw;
 
 }
 
@@ -53,16 +54,18 @@
 }
 
 .small-display {
-    /* display: none; */
-    text-align: center;
+    display: none;
+    /* text-align: center; */
     font-size: 11vw;
     font-weight: 900;
     width: 600px;
     text-transform: uppercase;
-    transform: translateY(-50%) translateX(-50%);
+    transform: rotateZ(90deg) translateY(-50%);
+    /* background-color: red; */
     top: 50%;
-    left:0;
+    left: calc(-5.271vw/2);
     position: absolute;
+    mix-blend-mode: soft-light;
 }
 
 .center-top {
@@ -97,7 +100,15 @@
 }
 
 
-@media only screen and (max-width: 576px) {}
+@media only screen and (max-width: 576px) {
+    .small-display {
+        display: block;
+    }
+
+    .middle {
+        display: none;
+    }
+}
 
 @media only screen and (min-width : 576px) {}
 
