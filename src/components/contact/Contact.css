@@ -1,20 +1,180 @@
-.lamp{
+.lamp {
     position: relative;
-    height: 100vh;
+    /* height: 90vh; */
+    padding-top: 30vw;
+
 }
-.lamp img{
+
+/* .lamp img {
     position: absolute;
-    top:  50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%) scale(1.5);
-    height: 100%;
-}
-.lamp :nth-child(1){
+    transform: translate(-50%, -60%) scale(.5);
+    width: 100%;
+} */
+
+.LampBg {
     mix-blend-mode: screen;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.3);
+    /* width: fit-content; */
+    height: fit-content;
 }
-.lamp :nth-child(2){
+
+.LampScreen {
     mix-blend-mode: screen;
+    opacity: .3;
+    transition: all .5s ease-in-out;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -39.8%) scale(.3);
+    /* width: fit-content; */
+    height: fit-content;
 }
-.lamp :nth-child(3){
+
+.LampMultiply {
     mix-blend-mode: multiply;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -39.8%) scale(.3);
+    /* width: fit-content; */
+    height: fit-content;
 }
+
+#lamp-toggle:checked~.LampBg {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+
+#lamp-toggle:checked~.LampScreen {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+#lamp-toggle:checked~.contact-heading {
+    opacity: 1;
+    transition: all 2s ease-in-out;
+}
+
+#lamp-toggle:checked~.contact-link {
+    opacity: 1;
+    transition: all 2s ease-in-out;
+}
+
+#lamp-toggle:hover~.LampBg {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+
+#lamp-toggle:hover~.LampScreen {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+#lamp-toggle:hover~.contact-heading {
+    opacity: 1;
+    transition: all 2s ease-in-out;
+}
+
+#lamp-toggle:hover~.contact-link {
+    opacity: 1;
+    transition: all 2s ease-in-out;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-top: -28vw;
+    position: absolute;
+    width: 100%;
+    font-size: 4vw;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.contact-link {
+    margin-top: 6vw;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    font-size: 2.5vw;
+    color: white;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.bottom-link {
+    margin-top: 7.5vw;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .lamp{
+        padding-top: 38vw;
+    }
+    .LampMultiply {
+        transform: translate(-50%, -24%) scale(.35);
+        height: fit-content;
+        width: auto;
+    }
+
+    .LampBg {
+        transform: translate(-50%, -45%) scale(.35);
+        height: fit-content;
+        width: auto;
+    }
+
+    .LampScreen {
+        transform: translate(-50%, -24%) scale(.35);
+        height: fit-content;
+        width: auto;
+    }
+
+    .lamp {
+        overflow-x: clip;
+    }
+
+    .contact-heading {
+        margin-top: -7vh;
+        font-size: 8vw;
+        font-weight: 900;
+    }
+
+    .contact-link {
+        margin-top: 60vh;
+        font-size: 5vw;
+        font-weight: 900;
+    }
+
+    .bottom-link {
+        margin-top: 62vh;
+    }
+}
+
+@media only screen and (min-width : 576px) {}
+
+@media only screen and (min-width : 768px) {}
+
+@media only screen and (min-width : 992px) {}
+
+@media only screen and (min-width : 1200px) {}
+
+@media only screen and (min-width : 1400px) {}
