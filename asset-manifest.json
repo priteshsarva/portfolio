@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.24085819.css",
-    "main.js": "/portfolio/static/js/main.00ef3b37.js",
+    "main.css": "/portfolio/static/css/main.10bab70d.css",
+    "main.js": "/portfolio/static/js/main.6033bdd5.js",
     "static/media/lampBG-1.png": "/portfolio/static/media/lampBG-1.bbe1bad0dfc48f04ef0c.png",
     "static/media/test.png": "/portfolio/static/media/test.3e078912ded02174991c.png",
     "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/portfolio/static/media/Montserrat-Italic-VariableFont_wght.7451547bd28d8dddbeea.ttf",
@@ -9,11 +9,11 @@
     "static/media/wallPattern.png": "/portfolio/static/media/wallPattern.8f0da30623e58260eb39.png",
     "static/media/LampScreen-1.png": "/portfolio/static/media/LampScreen-1.56bedefd677609aae1ab.png",
     "index.html": "/portfolio/index.html",
-    "main.24085819.css.map": "/portfolio/static/css/main.24085819.css.map",
-    "main.00ef3b37.js.map": "/portfolio/static/js/main.00ef3b37.js.map"
+    "main.10bab70d.css.map": "/portfolio/static/css/main.10bab70d.css.map",
+    "main.6033bdd5.js.map": "/portfolio/static/js/main.6033bdd5.js.map"
   },
   "entrypoints": [
-    "static/css/main.24085819.css",
-    "static/js/main.00ef3b37.js"
+    "static/css/main.10bab70d.css",
+    "static/js/main.6033bdd5.js"
   ]
 }
