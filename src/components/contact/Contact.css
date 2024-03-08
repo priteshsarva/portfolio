@@ -1,6 +1,6 @@
 .lamp {
     position: relative;
-    /* height: 90vh; */
+    height: fit-content ;
     padding-top: 30vw;
 
 }
@@ -159,13 +159,13 @@
     }
 
     .contact-link {
-        margin-top: 60vh;
+        margin-top: 56vh;
         font-size: 5vw;
         font-weight: 900;
     }
 
     .bottom-link {
-        margin-top: 62vh;
+        margin-top: 57vh;
     }
 }
 

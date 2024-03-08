@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.css'
-import LampScreen from "../../assets/images/Lamp/LampScreen.png";
-import LampBg from "../../assets/images/Lamp/lampBG.png";
+import LampScreen from "../../assets/images/Lamp/LampScreen-1.png";
+import LampBg from "../../assets/images/Lamp/lampBG-1.png";
 
 const Contact = () => {
 
