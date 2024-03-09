@@ -1,19 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import './TubeLight.css'
+import { LightContext } from '../../context/light';
 
 const TubeLight = () => {
-    var light, tubelightglare, lightfill;
+
+    const lightAffect = useContext(LightContext)
+   
 
     useEffect(() => {
-        light = document.getElementById('light')
-        tubelightglare = document.querySelector('.tubelightglare')
+        var light = document.querySelector('#light')
+        // tubelightglare = document.querySelector('.tubelightglare')
         light.checked = true
-        tubelightglare.style.opacity = 1;
-      
+        // tubelightglare.style.opacity = 1;
         idle()
     }, [])
-
+   
     const idle = () => {
+      var light = document.querySelector('#light')
         let time;
         const resetTimer = () => {
             clearTimeout(time)
@@ -21,8 +24,9 @@ const TubeLight = () => {
         }
         const lightoff = () => {
             light.checked = false;
-            tubelightglare.style.opacity = 0;
-            console.log('lightsoff');
+            lightAffect.setlightStatus(false)
+            // tubelightglare.style.opacity = 0;
+            // console.log('lightsoff');
         }
         document.addEventListener('scroll', resetTimer, true);
         document.addEventListener('keypress', resetTimer, true);
@@ -34,21 +38,29 @@ const TubeLight = () => {
         window.addEventListener('load', resetTimer, true);
     }
 
-    const changeLight = ()=>{
-        if (light.checked === true) { 
-            
-                    tubelightglare.style.opacity = 1;
-                    console.log('false part');
-                } else {
-                    tubelightglare.style.opacity = 0;
-                    console.log('true part');
-                }
+    const changeLight = () => {
+        var  light = document.querySelector('#light')
+        if (light.checked === true) {
+            lightAffect.setlightStatus(true)
+            // tubelightglare.style.opacity = 1;
+            // console.log('false part');
+        } else {
+
+            lightAffect.setlightStatus(false)
+            // tubelightglare.style.opacity = 0;
+            // console.log('true part');
+        }
     }
-    
+
+
+
+
+
+
     return (
         <>
-            <div className="lightfill "><span></span></div>
-            <div className="tubelightglare "><span></span><span></span></div>
+            {/* <div className="lightfill "><span></span></div>
+            <div className="tubelightglare "><span></span><span></span></div> */}
             <div className="place">
                 <label className="container" >
                     <input type="checkbox" id='light' onChange={changeLight} />

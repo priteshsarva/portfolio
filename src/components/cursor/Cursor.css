@@ -1,0 +1,31 @@
+.cursor {
+    opacity: .25;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    filter: blur(30px) drop-shadow(1px 1px 20px rgba(255, 255, 255, 1)) drop-shadow(1px 1px 20px rgba(255, 255, 255, .7)) drop-shadow(1px 1px 20px rgba(255, 255, 255, .5)) drop-shadow(1px 1px 20px rgba(255, 255, 255, .2));
+    mix-blend-mode: overlay;
+    transition: all .2s ease-out;
+}
+
+.cursor-light {
+    /* opacity: .8; */
+    position: fixed;
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    border-radius: 50%;
+    filter: blur(50px) drop-shadow(1px 1px 20px rgba(255, 255, 255, 1)) drop-shadow(1px 1px 20px rgba(255, 255, 255, .7)) drop-shadow(1px 1px 20px rgba(255, 255, 255, .5)) drop-shadow(1px 1px 20px rgba(255, 255, 255, .2));
+    mix-blend-mode: overlay;
+    transition: all .2s ease-out;
+}
+
+.background-cursor {
+    width: 110vw;
+    height: 110vh;
+    position: fixed;
+    background-color: black;
+    transition: all .2s ease-out;
+}
