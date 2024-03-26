@@ -1,11 +1,12 @@
 .career {
     height: 100vh;
-    /* background-color: red; */ 
-     padding-right: 5.271vw;
-    padding-left: 5.271vw; 
+    /* background-color: red; */
+    padding-right: 5.271vw;
+    padding-left: 5.271vw;
     /* margin-right: 5.271vw;
     margin-left: 5.271vw; */
     text-align: center;
+    margin-bottom: 10vw;
     mix-blend-mode: soft-light;
 }
 
@@ -26,14 +27,14 @@
 }
 
 @media only screen and (max-width: 576px) {
-    .career .heading {      
+    .career .heading {
         font-size: 10vw;
-        font-weight: 900;        
+        font-weight: 900;
     }
-    
+
     .career p {
         font-size: 5.5vw;
-        font-weight: 700;  
+        font-weight: 700;
     }
 }
 
