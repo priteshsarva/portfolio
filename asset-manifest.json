@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a3a39128.css",
-    "main.js": "/portfolio/static/js/main.34fd8618.js",
+    "main.css": "/portfolio/static/css/main.2e039700.css",
+    "main.js": "/portfolio/static/js/main.4e3f9249.js",
     "static/media/lampBG-1.png": "/portfolio/static/media/lampBG-1.bbe1bad0dfc48f04ef0c.png",
     "static/media/test.png": "/portfolio/static/media/test.3e078912ded02174991c.png",
     "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/portfolio/static/media/Montserrat-Italic-VariableFont_wght.7451547bd28d8dddbeea.ttf",
@@ -9,11 +9,11 @@
     "static/media/wallPattern.png": "/portfolio/static/media/wallPattern.8f0da30623e58260eb39.png",
     "static/media/LampScreen-1.png": "/portfolio/static/media/LampScreen-1.56bedefd677609aae1ab.png",
     "index.html": "/portfolio/index.html",
-    "main.a3a39128.css.map": "/portfolio/static/css/main.a3a39128.css.map",
-    "main.34fd8618.js.map": "/portfolio/static/js/main.34fd8618.js.map"
+    "main.2e039700.css.map": "/portfolio/static/css/main.2e039700.css.map",
+    "main.4e3f9249.js.map": "/portfolio/static/js/main.4e3f9249.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3a39128.css",
-    "static/js/main.34fd8618.js"
+    "static/css/main.2e039700.css",
+    "static/js/main.4e3f9249.js"
   ]
 }
