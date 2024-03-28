@@ -66,7 +66,7 @@
     transition: all 2s ease-in-out;
 }
 
-#lamp-toggle:checked~label>.contact-link {
+#lamp-toggle:checked~label>.lowerbottom {
     opacity: 1;
     transition: all 2s ease-in-out;
 }
@@ -87,7 +87,7 @@
     transition: all 2s ease-in-out;
 }
 
-#lamp-toggle:hover~label>.contact-link {
+#lamp-toggle:hover~label>.lowerbottom {
     opacity: 1;
     transition: all 2s ease-in-out;
 }
@@ -109,7 +109,7 @@
     transition: all .5s ease-in-out;
 }
 
-.contact-link {
+.lowerbottom {
     margin-top: 18vh;
     text-decoration: none;
     text-align: center;
@@ -120,11 +120,15 @@
     position: absolute;
     opacity: 0;
     transition: all .5s ease-in-out;
+    padding-bottom: 4vw;
 }
 
 .bottom-link {
     margin-top: 22vh;
     margin-bottom: 3vw;
+}
+.underline{
+    text-decoration: underline;
 }
 
 
@@ -161,7 +165,7 @@
         font-weight: 900;
     }
 
-    .contact-link {
+    .lowerbottom {
         margin-top: 42vh;
         font-size: 5vw;
         font-weight: 900;

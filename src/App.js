@@ -7,18 +7,32 @@ import Cursor from './components/cursor/Cursor';
 import Projects from './components/project/Projects';
 import TubeLight from './components/tubelight/TubeLight';
 import TubeLightBG from './components/tubelight/TubeLightBG';
+import Lock from './components/lockScreen/Lock';
+import { useEffect, useState } from 'react';
+
 
 function App() {
+  const [resize, setresize] = useState(false)
+
+  window.addEventListener('resize', () => {
+    window.innerWidth <= 1024 ? setresize(true) : setresize(false)
+  })
+  
+  useEffect(() => {
+    console.log(resize);
+  })
+
+
 
   return (
     <>
-      <Cursor />
-      <TubeLightBG />
-      <Intro />
-      <Career />
-      <Projects />
-      <Contact />
-      <TubeLight />
+      {
+        resize ? <Lock add={setresize} /> : <>
+          <Cursor /><TubeLightBG /><Intro /><Career /><Projects /><Contact /><TubeLight />
+        </>
+      }
+
+
     </>
 
   );
