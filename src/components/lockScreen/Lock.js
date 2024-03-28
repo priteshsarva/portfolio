@@ -24,7 +24,7 @@ const Lock = (props) => {
   return (
     <>
       <div className="lock">
-        <h1>Please use desktop device</h1>
+        <h1>Please use desktop device for better experience</h1>
       </div>
     </>
   )

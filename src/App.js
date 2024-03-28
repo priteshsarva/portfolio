@@ -12,15 +12,13 @@ import { useEffect, useState } from 'react';
 
 
 function App() {
-  const [resize, setresize] = useState(false)
+  const [resize, setresize] = useState(true)
 
-  window.addEventListener('resize', () => {
-    window.innerWidth <= 1024 ? setresize(true) : setresize(false)
-  })
+  
   
   useEffect(() => {
-    console.log(resize);
-  })
+    window.innerWidth <= 1024 ? setresize(true) : setresize(false)
+  },[])
 
 
 
