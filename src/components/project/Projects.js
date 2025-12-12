@@ -22,12 +22,12 @@ const Projects = () => {
                 </div>
             </div>
             <div className="top">
-                <SiteCard link='https://priteshsarva.github.io/project-1-cynthiaugwu' title="cynthiaugwu" />
-                <SiteCard link='https://priteshsarva.github.io/inotebook' title="I NoteBook" />
+                <SiteCard link='http://timeskeepers.in/' title="timeskeepers" />
+                <SiteCard link='https://solestyle1.netlify.app/' title="solestyle" />
             </div>
             <div className="bottom">
-                <SiteCard link='https://priteshsarva.github.io/pixes' title="pixes" />
-                <SiteCard link='https://priteshsarva.github.io/project-1-cynthiaugwu' title="cynthiaugwu" />
+                <SiteCard link='https://aquawatch1.netlify.app/' title="aquawatch" />
+                <SiteCard link='https://www.kicksmania.co.in/' title="kicksmania" />
             </div>
 
         </div>
